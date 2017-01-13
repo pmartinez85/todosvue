@@ -14,19 +14,19 @@
         </div>
       </md-toolbar>
 
-      <div id="router">
+      <div class="phone-viewport">
         <md-list>
-          <md-list-item>
+          <md-list-item @click="toggleLeftSidenav">
             <md-icon>move_to_inbox</md-icon>
             <router-link to="/todos">Todos</router-link>
           </md-list-item>
 
-          <md-list-item>
+          <md-list-item @click="toggleLeftSidenav">
             <md-icon>send</md-icon>
             <router-link to="/tokens">Tokens</router-link>
           </md-list-item>
 
-          <md-list-item>
+          <md-list-item @click="toggleLeftSidenav">
             <md-avatar>
               <img src="https://placeimg.com/40/40/people/5" alt="People">
             </md-avatar>
