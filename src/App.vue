@@ -4,7 +4,6 @@
       <md-button class="md-icon-button" @click="toggleLeftSidenav">
         <md-icon>menu</md-icon>
       </md-button>
-
       <h2 class="md-title">Todos</h2>
     </md-toolbar>
 
@@ -15,20 +14,16 @@
         </div>
       </md-toolbar>
 
-      <div class="phone-viewport">
+      <div id="router">
         <md-list>
           <md-list-item>
-            <md-icon>move_to_inbox</md-icon> <span>Todos</span>
+            <md-icon>move_to_inbox</md-icon>
+            <router-link to="/todos">Todos</router-link>
           </md-list-item>
 
           <md-list-item>
-            <md-icon>send</md-icon> <span>Tokens</span>
-          </md-list-item>
-
-          <md-list-item>
-            <md-icon>error</md-icon> <span>Spam</span>
-
-            <md-divider class="md-inset"></md-divider>
+            <md-icon>send</md-icon>
+            <router-link to="/tokens">Tokens</router-link>
           </md-list-item>
 
           <md-list-item>
@@ -46,7 +41,7 @@
         </md-list>
       </div>
     </md-sidenav>
-
+    TODO contingut
   </div>
 
 </template>
