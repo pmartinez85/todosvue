@@ -1,5 +1,5 @@
 <template>
-    <div>Msg: {{msg}}</div>
+    <div>TODO</div>
 </template>
 <style>
 </style>
@@ -7,7 +7,7 @@
     export default {
       data () {
         return {
-          msg: 'Todos vue'
+          todos: []
         }
       },
       created () {
