@@ -1,6 +1,5 @@
 <template>
   <div class="phone-viewport">
-
     <md-toolbar>
       <md-button class="md-icon-button" @click="toggleLeftSidenav">
         <md-icon>menu</md-icon>
@@ -18,26 +17,27 @@
 
       <md-list>
         <md-list-item @click="toggleLeftSidenav">
-          <md-icon>view_list</md-icon>
-          <router-link to="/todos">Todos</router-link>
+          <md-icon>move_to_inbox</md-icon>
+          <router-link exact to="/todos">Todos</router-link>
         </md-list-item>
 
         <md-list-item @click="toggleLeftSidenav">
-          <md-icon>verified_user</md-icon>
-          <router-link to="/tokens">Tokens</router-link>
+          <md-icon>send</md-icon> <router-link exact  to="/tokens" >Tokens</router-link>
         </md-list-item>
 
-        <md-list-item>
+        <md-list-item @click="toggleLeftSidenav">
           <md-avatar>
             <img src="https://placeimg.com/40/40/people/5" alt="People">
           </md-avatar>
 
-          <span>Abbey Christansen</span>
+          <span>Contact example</span>
 
           <md-button class="md-icon-button md-list-action">
             <md-icon class="md-primary">chat_bubble</md-icon>
           </md-button>
         </md-list-item>
+
+
       </md-list>
 
     </md-sidenav>
@@ -69,4 +69,8 @@ export default {
 </script>
 
 <style>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 </style>
