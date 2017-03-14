@@ -30,6 +30,13 @@ Vue.use(VueRouter)
 Vue.use(VueMaterial)
 /* eslint-disable no-new */
 
+Vue.material.registerTheme('custom', {
+  primary: 'grenn',
+  accent: 'blue',
+  warn: 'blue',
+  background: 'grey'
+})
+
 new Vue({
   el: '#app',
   template: '<App/>',
