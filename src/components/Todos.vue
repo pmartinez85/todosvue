@@ -68,9 +68,9 @@
 </style>
 <script>
 var STORAGE_KEY = 'todosvue_token'
-var AUTH_CLIENT_ID = 1
+var AUTH_CLIENT_ID = 81
 var AUTH_REDIRECT_URI = 'http://localhost:8090/todos'
-var API_URL = 'http://todos.dev:8080/api/v1/task'
+var API_URL = 'http://todosbackend.pedromartinez.2dam.acacha.org:8080/api/v1/task'
 var OAUTH_SERVER_URL = 'http://todos.dev:8080/oauth/authorize?'
 export default{
   data () {
